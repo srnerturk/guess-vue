@@ -1,0 +1,87 @@
+body {
+  background: var(--bg-color);
+}
+
+#app {
+  font-family: "Oswald", sans-serif;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.swal2-container {
+  font-family: "Oswald", sans-serif;
+}
+:root {
+  --header-color: #25076b;
+  --shape-color: #3f1481;
+  --bg-color: #46168f;
+  --guess-white: #fff;
+}
+.square {
+  z-index: -1;
+  width: 700px;
+  height: 700px;
+  background: var(--shape-color);
+  pointer-events: none;
+  position: absolute;
+  top: -200px;
+  left: 0;
+  transform: rotate(45deg);
+  transition: all 5s;
+}
+.circle {
+  z-index: -1;
+  width: 700px;
+  height: 700px;
+  background: var(--shape-color);
+  pointer-events: none;
+  position: absolute;
+  bottom: 0px;
+  right: -50px;
+  border-radius: 9999px;
+  transition: all 5s;
+}
+.button,
+.swal2-confirm {
+  background: rgb(51, 51, 51);
+  border: 3px solid #ededed;
+  border-radius: 6px;
+  height: 48px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 20px;
+  cursor: pointer;
+  min-width: 110px;
+  border: 2px solid #fff;
+  transition: all 0.8s;
+  font-family: "Oswald", sans-serif;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.input {
+  position: relative;
+  svg {
+    position: absolute;
+    left: 7px;
+    top: 15px;
+    stroke: var(--bg-color);
+    stroke-width: 1;
+  }
+  input {
+    height: 48px;
+    background: #fff;
+    border-radius: 4px;
+    padding-left: 32px;
+    border: 2px solid #ededed;
+    font-weight: 400;
+    min-width: 280px;
+    font-size: 14px;
+    border: 2px solid var(#ededed);
+    font-family: "Oswald", sans-serif;
+    &:focus {
+      border: 2px solid var(--bg-color);
+    }
+  }
+}

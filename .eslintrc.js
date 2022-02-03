@@ -12,6 +12,11 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
-  }
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    "template-curly-spacing": "off",
+    "quotes": ["error", "double"],
+    "indent": ["error", 2, {
+      "ignoredNodes": ["TemplateLiteral"]
+    }]
+  },
 }
